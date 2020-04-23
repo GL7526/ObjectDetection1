@@ -24,6 +24,18 @@ One interesting graph is an image's histogram of the grayscale values for each p
 This is the image histogram of a random image I used in the training set. Since there are a couple of peaks at fair distances apart, we can say that there is some contrast in the image. This seems to provide a more quantifiable way to measure the contrast of an image, although it still is somewhat of an eye test.
 
 ### RGB and YCrCb Color Spaces
+We can also look at each RGB channel individually to see how much information is in each for a random picture in the dataset:
+<p align = "center">
+  <img src = "images/eda/RGB%20Split%20and%20Combined.png" width = 650>
+</p>
+Here we see that there isn't much difference among channels, other than the red radiator in the back standing out more in the red channel than in the others. This tells us that maybe using only one channel, or maybe just the grayscale version of the picture, may give us most of the information while reducing the number of computations.
+
+By reading the image in the luminance-chrominance color space, and then viewing each of the channels individually again, we get the following:
+<p align = "center">
+  <img src = images/eda/YCrCb%20Split.png width = 650>
+</p>
+The luminance component seems to maintain what we see in the original image the most, while the chrominance channels don't seem to provide much information, and actually, grayscale is exactly this. Grayscale is just the luminance channel, which contains information on the "brightness," while having no color. This is nice to know if I ever want to train the model more quickly, for a fast test.
+
 
 
 <!--
