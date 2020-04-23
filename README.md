@@ -6,7 +6,6 @@ The data are images of rolls of toilet paper from Google Images.
 - [EDA](#EDA)
 - [The Model](#Model)
 - [Evaluation](#Evaluation)
-
 <br>
 
 ## Exploratory Data Analysis <a name = 'EDA'></a>
