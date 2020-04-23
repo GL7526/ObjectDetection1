@@ -9,7 +9,7 @@ The data are images of rolls of toilet paper from Google Images.
 
 - [EDA](#EDA)
 - [The Model](#Model)
-- [Potential Improvements](#Improvements)
+- [Evaluation](#Evaluation)
 
 <br>
 
@@ -36,6 +36,10 @@ By reading the image in the luminance-chrominance color space, and then viewing 
 </p>
 The luminance component seems to maintain what we see in the original image the most, while the chrominance channels don't seem to provide much information, and actually, grayscale is exactly this. Grayscale is just the luminance channel, which contains information on the "brightness," while having no color. This is nice to know if I ever want to train the model more quickly, for a fast test.
 
+## The Model <a name = "Model"></a>
+The model uses YOLOv3's architecture. Therefore, it is a 106 layer fully convolutional neural network that outputs values for the bounding boxes for each roll of toilet paper that it detects, and the probability that the object is toilet paper, in each image. It can then use this information to plot the bounding boxes on the image so we can visually see where the rolls of toilet paper are.
+
+## Evaluation <a name = "Evaluation"></a>
 
 
 <!--
