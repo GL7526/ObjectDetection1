@@ -40,7 +40,11 @@ The luminance component seems to maintain what we see in the original image the 
 The model uses YOLOv3's architecture. Therefore, it is a 106 layer fully convolutional neural network that outputs values for the bounding boxes for each roll of toilet paper that it detects, and the probability that the object is toilet paper, in each image. It can then use this information to plot the bounding boxes on the image so we can visually see where the rolls of toilet paper are.
 
 ## Evaluation <a name = "Evaluation"></a>
-
+The evaluation metric I used is the mean average precision (mAP), a metric based on precision and recall. The graph shows the model's mAP before and after applying image augmentation in an attempt to improve performance:
+<p align = "center">
+  <img src = "images/results/mapbar.png" width = 500>
+</p>
+I also included YOLO's initial architecture's mAP in a competition it was used in 2007 as sort of a low estimate for how much it can improve up to.
 
 <!--
 <br>
