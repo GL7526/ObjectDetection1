@@ -1,7 +1,3 @@
-# ObjectDetection
-# ** readme to be edited **
-
-
 # Finding Toilet Paper
 At the time of the project, I've been wanting to find a way to get more familiar with convolutional neural networks. At the same time, a new strain of coronavirus had reached pandemic levels of prevalency. This has caused people to panic buy face masks, hand sanitizer, and toilet paper. As a result, I decided to try to create a model that would be able to detect a roll of toilet paper in an image.
 The data are images of rolls of toilet paper from Google Images.
@@ -63,4 +59,5 @@ Another way to see how well the model performs is by looking at the images after
 </p>
 We see that the model starts to pick up the more obvious rolls of toilet paper such as the ones in the front, but fail to detect the more ambiguous rolls that are covered in the back. The bounding boxes also become a little bit more defined and in general, the probabilities that the detected objects are toilet paper are higher after image augmentation.
 <br>
+
 One drawback of the model is that it seems to have started overfitting. After looking at images passed through the model before and after image augmentation, I noticed that some images that had toilet paper detected, started to lose those detections, meaning more false negatives. This can be due to the neural network refining its weights based on a small dataset and therefore having only a limited number of images to learn from, which may not be completely representative of what toilet paper looks like.
