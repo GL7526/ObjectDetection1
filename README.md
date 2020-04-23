@@ -6,7 +6,6 @@ The data are images of rolls of toilet paper from Google Images.
 - [EDA](#EDA)
 - [The Model](#Model)
 - [Evaluation](#Evaluation)
-<br>
 
 ## Exploratory Data Analysis <a name = 'EDA'></a>
 Unlike "ordinary" tabulated data, images don't have any obvious features about them to explore. Instead, I found other interesting ways to explore the data, most of which seem to focus on the images' metadata.
