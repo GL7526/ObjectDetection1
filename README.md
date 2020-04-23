@@ -1,24 +1,32 @@
 # ObjectDetection
 # ** readme to be edited **
 
-<!--
+
 # Finding Toilet Paper
-At the time of the project, I've been wanting to find a way to get more familiar with convolutional neural networks. At the same time, a new strain of coronavirus had reached pandemic levels of prevalency. This has caused people to panic buy face masks, hand sanitizer, and toilet paper. As a result, I decided to focus on creating a model that would be able to detect a roll of toilet paper in an image.
-
-
-
+At the time of the project, I've been wanting to find a way to get more familiar with convolutional neural networks. At the same time, a new strain of coronavirus had reached pandemic levels of prevalency. This has caused people to panic buy face masks, hand sanitizer, and toilet paper. As a result, I decided to try to create a model that would be able to detect a roll of toilet paper in an image.
+The data are images of rolls of toilet paper from Google Images.
 <br>
 
-- [Project Goal](#ProjGoal)
-- [Cleaning Data](#Preprocessing)
 - [EDA](#EDA)
 - [The Model](#Model)
 - [Potential Improvements](#Improvements)
 
 <br>
 
-## Project Goal <a name = 'ProjGoal'></a>
-The goal of this project is to predict the rating of a drug review based on the text.
+## Exploratory Data Analysis <a name = 'EDA'></a>
+Unlike "ordinary" tabulated data, images don't have any obvious features about them to explore. Instead, I found other interesting ways to explore the data, most of which seem to focus on the images' metadata.
+
+### Image Histogram
+One interesting graph is an image's histogram of the grayscale values for each pixel, such as the one below:
+<p align = "center">
+  <img src = "images/eda/Image%20Histogram%20Grayscale%20Intensity.PNG" width = 400>
+</p>
+This is the image histogram of a random image I used in the training set. Since there are a couple of peaks at fair distances apart, we can say that there is some contrast in the image. This seems to provide a more quantifiable way to measure the contrast of an image, although it still is somewhat of an eye test.
+
+### RGB and YCrCb Color Spaces
+
+
+<!--
 <br>
 <br>
 ## Preprocessing/Data Cleaning <a name = 'Preprocessing'></a>
