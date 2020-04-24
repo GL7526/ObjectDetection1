@@ -38,7 +38,7 @@ The evaluation metric I used is the mean average precision (mAP), a metric based
 <p align = "center">
   <img src = "images/results/mapbar.png" width = 500>
 </p>
-I also included YOLO's initial architecture's mAP in a competition it was used in 2007 as sort of an underestimate for how much it can improve up to.
+I also included YOLO's initial architecture's mAP in a competition it was used in 2007 as sort of an underestimate for how much it can improve up to. If you are interested, the numerical values are 38.01, 44.35, and 63.4 from left to right.
 
 Another way to see how well the model performs is by looking at the images after having the bounding boxes plotted onto them. Below shows images that were passed through the model before and after implementing image augmentation:
 
